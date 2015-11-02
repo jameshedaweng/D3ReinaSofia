@@ -1,0 +1,183 @@
+@import "modules/all";
+
+html, body{
+  overflow: hidden;
+  border: 0px;
+  margin: 0px;
+  font-family: "PFDinTextPro-Regular", sans-serif;
+  color: $textGray;
+}
+
+@mixin transition(){
+  -webkit-transition: .4s linear .1s;
+  -moz-transition: .4s linear .1s;
+  -o-transition: .4s linear .1s;
+  transition: .4s linear .1s;
+}
+
+@mixin bottom-bar-item($themeColor){
+  margin: 0px;
+  border-top: 5px solid $themeColor;
+  display: inline-block;
+  width: 16.66vw;
+  padding: 7px 15px;
+  background-color: $translucentWhite;
+  -webkit-backdrop-filter: blur(5px);
+  @include transition();
+  cursor: pointer;
+  .title{
+    font-size: 18px;
+    font-family: "PFDinTextPro-Bold", sans-serif;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .subtitle{
+    font-size: 14px;
+    font-family: "PFDinTextPro-Light", sans-serif;
+    line-height: 20px;
+  }
+  &:hover, &.category-active{
+    color: $textWhite;
+    background-color: rgba($themeColor, 0.6);
+    height: 70px;
+    margin-top: -10px;
+  }
+}
+
+.main-container{
+  width: 100vw;
+  height: 100vh;
+  background-color: $themeAllBackground;
+  .top-bar{
+    padding: 15px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    .logo{
+      img{  
+        width: 130px;
+        height: auto;
+      }
+    }
+  }
+  .bottom-bar{
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    .bottom-bar-item{
+      &:not(:last-of-type){
+        border-right: 1px solid $lineGray;
+      }
+      &#category-0{
+        @include bottom-bar-item($themeAll);
+      }
+      &#category-1{
+        @include bottom-bar-item($theme1);
+      }
+      &#category-2{
+        @include bottom-bar-item($theme2);
+      }
+      &#category-3{
+        @include bottom-bar-item($theme3);
+      }
+      &#category-4{
+        @include bottom-bar-item($theme4);
+      }
+      &#category-5{
+        @include bottom-bar-item($theme5);
+      }
+    }
+  }
+  .active-content{
+    display: none;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 50vh;
+    left: 50vw;
+    margin-left: -300px;
+    margin-top: -300px;
+    border-radius: 300px;
+    overflow: hidden;
+    .active-close-button{
+      color: $textWhite;
+      font-size: 48px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      position: absolute;
+      top: 20px;
+      left: 280px;
+      cursor: pointer;
+    }
+    .active-container{
+      color: $textWhite;
+      .video-thumb-container{
+        width: 100%;
+        height: 240px;
+        overflow: hidden;
+        .video-thumb{
+          width: 100%;
+        }
+      }
+      .active-container-inner{
+        padding: 15px 100px;
+        .video-title{
+          font-family: "Shadows Into Light", sans-serif;
+          font-size: 36px;
+        }
+        .video-subtitle{
+          font-size: 24px;
+          margin: 10px 0px;
+        }
+        .video-button-container{
+          width: 100%;
+          text-align: center;
+          .video-button{
+            margin-top: 30px;
+            padding: 5px 15px;
+            border: 2px solid $textWhite;
+            border-radius: 5px;
+            display: inline-block;
+            cursor: pointer;
+            &:hover{
+              background-color: rgba($textWhite, 0.2);
+            }
+          }
+        }
+      }
+    }
+  }
+  .video-container{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    background-color: rgba($bgWhite, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    .video-close-button{
+      color: $textGray;
+      font-size: 48px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+    .video-active{
+      width: 1280px;
+      height: auto;
+      max-width: 90%;
+    }
+  }
+}

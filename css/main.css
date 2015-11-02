@@ -1,0 +1,328 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@font-face {
+  font-family: 'PFDinTextPro-ExtraBlack';
+  src: url("../font/294CD0_0_0.eot");
+  src: url("../font/294CD0_0_0.eot?#iefix") format("embedded-opentype"), url("../font/294CD0_0_0.woff") format("woff"), url("../font/294CD0_0_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-ExtraBlackItalic';
+  src: url("../font/294CD0_1_0.eot");
+  src: url("../font/294CD0_1_0.eot?#iefix") format("embedded-opentype"), url("../font/294CD0_1_0.woff") format("woff"), url("../font/294CD0_1_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-Regular';
+  src: url("../font/294CD0_2_0.eot");
+  src: url("../font/294CD0_2_0.eot?#iefix") format("embedded-opentype"), url("../font/294CD0_2_0.woff") format("woff"), url("../font/294CD0_2_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-Medium';
+  src: url("../font/294CD0_3_0.eot");
+  src: url("../font/294CD0_3_0.eot?#iefix") format("embedded-opentype"), url("../font/294CD0_3_0.woff") format("woff"), url("../font/294CD0_3_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-BoldItalic';
+  src: url("../font/294CD0_4_0.eot");
+  src: url("../font/294CD0_4_0.eot?#iefix") format("embedded-opentype"), url("../font/294CD0_4_0.woff") format("woff"), url("../font/294CD0_4_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-MediumItalic';
+  src: url("../font/294CD0_5_0.eot");
+  src: url("../font/294CD0_5_0.eot?#iefix") format("embedded-opentype"), url("../font/294CD0_5_0.woff") format("woff"), url("../font/294CD0_5_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-Italic';
+  src: url("../font/294CD0_6_0.eot");
+  src: url("../font/294CD0_6_0.eot?#iefix") format("embedded-opentype"), url("../font/294CD0_6_0.woff") format("woff"), url("../font/294CD0_6_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-Bold';
+  src: url("../font/294CD0_7_0.eot");
+  src: url("../font/294CD0_7_0.eot?#iefix") format("embedded-opentype"), url("../font/294CD0_7_0.woff") format("woff"), url("../font/294CD0_7_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-Thin';
+  src: url("../font/294CD0_8_0.eot");
+  src: url("../font/294CD0_8_0.eot?#iefix") format("embedded-opentype"), url("../font/294CD0_8_0.woff") format("woff"), url("../font/294CD0_8_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-Light';
+  src: url("../font/294CD0_9_0.eot");
+  src: url("../font/294CD0_9_0.eot?#iefix") format("embedded-opentype"), url("../font/294CD0_9_0.woff") format("woff"), url("../font/294CD0_9_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-ExtraThin';
+  src: url("../font/294CD0_A_0.eot");
+  src: url("../font/294CD0_A_0.eot?#iefix") format("embedded-opentype"), url("../font/294CD0_A_0.woff") format("woff"), url("../font/294CD0_A_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-ThinItalic';
+  src: url("../font/294CD0_B_0.eot");
+  src: url("webfonts/294CD0_B_0.eot?#iefix") format("embedded-opentype"), url("webfonts/294CD0_B_0.woff") format("woff"), url("webfonts/294CD0_B_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-ExtraThinItalic';
+  src: url("webfonts/294CD0_C_0.eot");
+  src: url("webfonts/294CD0_C_0.eot?#iefix") format("embedded-opentype"), url("webfonts/294CD0_C_0.woff") format("woff"), url("webfonts/294CD0_C_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-LightItalic';
+  src: url("webfonts/294CD0_D_0.eot");
+  src: url("webfonts/294CD0_D_0.eot?#iefix") format("embedded-opentype"), url("webfonts/294CD0_D_0.woff") format("woff"), url("webfonts/294CD0_D_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'PFDinTextPro-Hairline';
+  src: url("webfonts/294CD0_E_0.eot");
+  src: url("webfonts/294CD0_E_0.eot?#iefix") format("embedded-opentype"), url("webfonts/294CD0_E_0.woff") format("woff"), url("webfonts/294CD0_E_0.ttf") format("truetype"); }
+html, body {
+  overflow: hidden;
+  border: 0px;
+  margin: 0px;
+  font-family: "PFDinTextPro-Regular", sans-serif;
+  color: #333333; }
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F8F9F9; }
+  .main-container .top-bar {
+    padding: 15px;
+    position: fixed;
+    top: 0px;
+    left: 0px; }
+    .main-container .top-bar .logo img {
+      width: 130px;
+      height: auto; }
+  .main-container .bottom-bar {
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex; }
+    .main-container .bottom-bar .bottom-bar-item:not(:last-of-type) {
+      border-right: 1px solid #CCCCCC; }
+    .main-container .bottom-bar .bottom-bar-item#category-0 {
+      margin: 0px;
+      border-top: 5px solid #777777;
+      display: inline-block;
+      width: 16.66vw;
+      padding: 7px 15px;
+      background-color: rgba(255, 255, 255, 0.3);
+      -webkit-backdrop-filter: blur(5px);
+      -webkit-transition: .4s linear .1s;
+      -moz-transition: .4s linear .1s;
+      -o-transition: .4s linear .1s;
+      transition: .4s linear .1s;
+      cursor: pointer; }
+      .main-container .bottom-bar .bottom-bar-item#category-0 .title {
+        font-size: 18px;
+        font-family: "PFDinTextPro-Bold", sans-serif;
+        line-height: 20px;
+        text-transform: uppercase; }
+      .main-container .bottom-bar .bottom-bar-item#category-0 .subtitle {
+        font-size: 14px;
+        font-family: "PFDinTextPro-Light", sans-serif;
+        line-height: 20px; }
+      .main-container .bottom-bar .bottom-bar-item#category-0:hover, .main-container .bottom-bar .bottom-bar-item#category-0.category-active {
+        color: #FFFFFF;
+        background-color: rgba(119, 119, 119, 0.6);
+        height: 70px;
+        margin-top: -10px; }
+    .main-container .bottom-bar .bottom-bar-item#category-1 {
+      margin: 0px;
+      border-top: 5px solid #F39C12;
+      display: inline-block;
+      width: 16.66vw;
+      padding: 7px 15px;
+      background-color: rgba(255, 255, 255, 0.3);
+      -webkit-backdrop-filter: blur(5px);
+      -webkit-transition: .4s linear .1s;
+      -moz-transition: .4s linear .1s;
+      -o-transition: .4s linear .1s;
+      transition: .4s linear .1s;
+      cursor: pointer; }
+      .main-container .bottom-bar .bottom-bar-item#category-1 .title {
+        font-size: 18px;
+        font-family: "PFDinTextPro-Bold", sans-serif;
+        line-height: 20px;
+        text-transform: uppercase; }
+      .main-container .bottom-bar .bottom-bar-item#category-1 .subtitle {
+        font-size: 14px;
+        font-family: "PFDinTextPro-Light", sans-serif;
+        line-height: 20px; }
+      .main-container .bottom-bar .bottom-bar-item#category-1:hover, .main-container .bottom-bar .bottom-bar-item#category-1.category-active {
+        color: #FFFFFF;
+        background-color: rgba(243, 156, 18, 0.6);
+        height: 70px;
+        margin-top: -10px; }
+    .main-container .bottom-bar .bottom-bar-item#category-2 {
+      margin: 0px;
+      border-top: 5px solid #E74C3C;
+      display: inline-block;
+      width: 16.66vw;
+      padding: 7px 15px;
+      background-color: rgba(255, 255, 255, 0.3);
+      -webkit-backdrop-filter: blur(5px);
+      -webkit-transition: .4s linear .1s;
+      -moz-transition: .4s linear .1s;
+      -o-transition: .4s linear .1s;
+      transition: .4s linear .1s;
+      cursor: pointer; }
+      .main-container .bottom-bar .bottom-bar-item#category-2 .title {
+        font-size: 18px;
+        font-family: "PFDinTextPro-Bold", sans-serif;
+        line-height: 20px;
+        text-transform: uppercase; }
+      .main-container .bottom-bar .bottom-bar-item#category-2 .subtitle {
+        font-size: 14px;
+        font-family: "PFDinTextPro-Light", sans-serif;
+        line-height: 20px; }
+      .main-container .bottom-bar .bottom-bar-item#category-2:hover, .main-container .bottom-bar .bottom-bar-item#category-2.category-active {
+        color: #FFFFFF;
+        background-color: rgba(231, 76, 60, 0.6);
+        height: 70px;
+        margin-top: -10px; }
+    .main-container .bottom-bar .bottom-bar-item#category-3 {
+      margin: 0px;
+      border-top: 5px solid #8E44AD;
+      display: inline-block;
+      width: 16.66vw;
+      padding: 7px 15px;
+      background-color: rgba(255, 255, 255, 0.3);
+      -webkit-backdrop-filter: blur(5px);
+      -webkit-transition: .4s linear .1s;
+      -moz-transition: .4s linear .1s;
+      -o-transition: .4s linear .1s;
+      transition: .4s linear .1s;
+      cursor: pointer; }
+      .main-container .bottom-bar .bottom-bar-item#category-3 .title {
+        font-size: 18px;
+        font-family: "PFDinTextPro-Bold", sans-serif;
+        line-height: 20px;
+        text-transform: uppercase; }
+      .main-container .bottom-bar .bottom-bar-item#category-3 .subtitle {
+        font-size: 14px;
+        font-family: "PFDinTextPro-Light", sans-serif;
+        line-height: 20px; }
+      .main-container .bottom-bar .bottom-bar-item#category-3:hover, .main-container .bottom-bar .bottom-bar-item#category-3.category-active {
+        color: #FFFFFF;
+        background-color: rgba(142, 68, 173, 0.6);
+        height: 70px;
+        margin-top: -10px; }
+    .main-container .bottom-bar .bottom-bar-item#category-4 {
+      margin: 0px;
+      border-top: 5px solid #3498DB;
+      display: inline-block;
+      width: 16.66vw;
+      padding: 7px 15px;
+      background-color: rgba(255, 255, 255, 0.3);
+      -webkit-backdrop-filter: blur(5px);
+      -webkit-transition: .4s linear .1s;
+      -moz-transition: .4s linear .1s;
+      -o-transition: .4s linear .1s;
+      transition: .4s linear .1s;
+      cursor: pointer; }
+      .main-container .bottom-bar .bottom-bar-item#category-4 .title {
+        font-size: 18px;
+        font-family: "PFDinTextPro-Bold", sans-serif;
+        line-height: 20px;
+        text-transform: uppercase; }
+      .main-container .bottom-bar .bottom-bar-item#category-4 .subtitle {
+        font-size: 14px;
+        font-family: "PFDinTextPro-Light", sans-serif;
+        line-height: 20px; }
+      .main-container .bottom-bar .bottom-bar-item#category-4:hover, .main-container .bottom-bar .bottom-bar-item#category-4.category-active {
+        color: #FFFFFF;
+        background-color: rgba(52, 152, 219, 0.6);
+        height: 70px;
+        margin-top: -10px; }
+    .main-container .bottom-bar .bottom-bar-item#category-5 {
+      margin: 0px;
+      border-top: 5px solid #1ABC9C;
+      display: inline-block;
+      width: 16.66vw;
+      padding: 7px 15px;
+      background-color: rgba(255, 255, 255, 0.3);
+      -webkit-backdrop-filter: blur(5px);
+      -webkit-transition: .4s linear .1s;
+      -moz-transition: .4s linear .1s;
+      -o-transition: .4s linear .1s;
+      transition: .4s linear .1s;
+      cursor: pointer; }
+      .main-container .bottom-bar .bottom-bar-item#category-5 .title {
+        font-size: 18px;
+        font-family: "PFDinTextPro-Bold", sans-serif;
+        line-height: 20px;
+        text-transform: uppercase; }
+      .main-container .bottom-bar .bottom-bar-item#category-5 .subtitle {
+        font-size: 14px;
+        font-family: "PFDinTextPro-Light", sans-serif;
+        line-height: 20px; }
+      .main-container .bottom-bar .bottom-bar-item#category-5:hover, .main-container .bottom-bar .bottom-bar-item#category-5.category-active {
+        color: #FFFFFF;
+        background-color: rgba(26, 188, 156, 0.6);
+        height: 70px;
+        margin-top: -10px; }
+  .main-container .active-content {
+    display: none;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 50vh;
+    left: 50vw;
+    margin-left: -300px;
+    margin-top: -300px;
+    border-radius: 300px;
+    overflow: hidden; }
+    .main-container .active-content .active-close-button {
+      color: #FFFFFF;
+      font-size: 48px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      position: absolute;
+      top: 20px;
+      left: 280px;
+      cursor: pointer; }
+    .main-container .active-content .active-container {
+      color: #FFFFFF; }
+      .main-container .active-content .active-container .video-thumb-container {
+        width: 100%;
+        height: 240px;
+        overflow: hidden; }
+        .main-container .active-content .active-container .video-thumb-container .video-thumb {
+          width: 100%; }
+      .main-container .active-content .active-container .active-container-inner {
+        padding: 15px 100px; }
+        .main-container .active-content .active-container .active-container-inner .video-title {
+          font-family: "Shadows Into Light", sans-serif;
+          font-size: 36px; }
+        .main-container .active-content .active-container .active-container-inner .video-subtitle {
+          font-size: 24px;
+          margin: 10px 0px; }
+        .main-container .active-content .active-container .active-container-inner .video-button-container {
+          width: 100%;
+          text-align: center; }
+          .main-container .active-content .active-container .active-container-inner .video-button-container .video-button {
+            margin-top: 30px;
+            padding: 5px 15px;
+            border: 2px solid #FFFFFF;
+            border-radius: 5px;
+            display: inline-block;
+            cursor: pointer; }
+            .main-container .active-content .active-container .active-container-inner .video-button-container .video-button:hover {
+              background-color: rgba(255, 255, 255, 0.2); }
+  .main-container .video-container {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(10px); }
+    .main-container .video-container .video-close-button {
+      color: #333333;
+      font-size: 48px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer; }
+    .main-container .video-container .video-active {
+      width: 1280px;
+      height: auto;
+      max-width: 90%; }
+
+/*# sourceMappingURL=main.css.map */
